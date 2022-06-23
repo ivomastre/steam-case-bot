@@ -1,0 +1,25 @@
+{
+  "name": "steam-case-bot",
+  "version": "1.0.0",
+  "description": "A bot that asks for friend's csgo cases",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js",
+    "create-friends": "node src/scripts/createFriendsJson.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivomastre/steam-case-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivomastre/steam-case-bot/issues"
+  },
+  "homepage": "https://github.com/ivomastre/steam-case-bot#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
