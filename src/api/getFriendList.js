@@ -1,25 +1,24 @@
-const axios = require("axios");
-const fs = require("fs");
+const axios = require('axios')
 
-const { steamId, sessionId, steamApiKey } = require("../../credentials.json");
+const { steamId, sessionId, steamApiKey } = require('../../credentials.json')
 
 const getFriendList = async () => {
   const { data } = await axios.get(
-    "http://api.steampowered.com/ISteamUser/GetFriendList/v0001",
+    'http://api.steampowered.com/ISteamUser/GetFriendList/v0001',
     {
       params: {
         key: steamApiKey,
         steamid: steamId,
-        relationship: "friend",
+        relationship: 'friend',
       },
     }
-  );
+  )
 
   const {
     friendslist: { friends },
-  } = data;
+  } = data
 
-  return friends;
-};
+  return friends
+}
 
-module.exports = getFriendList;
+module.exports = getFriendList

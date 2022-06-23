@@ -1,5 +1,5 @@
-const getFriendList = require("./getFriendList");
+const getFriendList = require('./getFriendList')
 
 module.exports = {
   getFriendList,
-};
+}

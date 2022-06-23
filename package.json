@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node src/index.js",
     "start": "node src/index.js",
-    "create-friends": "node src/scripts/createFriendsJson.js"
+    "create-friends": "node src/scripts/createFriendsJson.js",
+    "format": "prettier --write \"./**/*.{ts,tsx,json,js}\""
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "homepage": "https://github.com/ivomastre/steam-case-bot#readme",
   "dependencies": {
     "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
   }
 }
